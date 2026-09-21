@@ -12,35 +12,40 @@
 
 <body>
 
-    <h1>register</h1>
+    <div class="page-content">
 
-    <div>
-        <a href="index.html" class="home-link">home</a>
-    </div>
+        <h1>register</h1>
 
-    <form>
-        <label for="name">name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="attended">have you attended before?</label>
-        <select id="attended" name="attended" required>
-            <option value="">--</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-        </select>
-
-        <div id="referral-question" style="display: none;">
-            <label for="referral">Who referred you?</label>
-            <input type="text" id="referral" name="referral">
+        <div>
+            <a href="index.html" class="home-link">home</a>
         </div>
 
-        <button type="submit">register</button>
-    </form>
+        <form>
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required>
 
-    <script src="script.js"></script>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="attended">have you attended before?</label>
+            <select id="attended" name="attended" required>
+                <option value="">--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <div id="referral-question" style="display: none;">
+                <label for="referral">Who referred you?</label>
+                <input type="text" id="referral" name="referral">
+            </div>
+
+            <button type="submit">register</button>
+        </form>
+
+        <script src="script.js"></script>
+
+    </div>
+
 </body>
 
 </html>
