@@ -33,20 +33,28 @@ form {
     gap: 10px;
 }
 
-input {
+input,
+select,
+button {
+    box-sizing: border-box;
+    width: 100%;
     padding: 12px;
     font-size: 16px;
 }
 
+input,
+select {
+    background-color: rgba(250, 250, 170, 0.7);
+}
+
 button {
-    padding: 12px;
-    font-size: 16px;
     cursor: pointer;
+    background-color: rgba(120, 120, 120, 1);
 }
 
 .home-link {
     display: block;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .register-link {
