@@ -17,14 +17,11 @@ body {
     margin: 0;
     padding: 0;
 
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("images/planting-background.jpg");
+    background-image: url("images/planting-background.jpg");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 
     min-height: 100vh;
 }
