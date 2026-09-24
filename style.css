@@ -32,11 +32,16 @@ body {
     min-height: 100vh;
     padding: 40px;
     box-sizing: border-box;
+
+    position: relative;
+    z-index: 1;
 }
 
 .photo-landscape {
     width: 100%;
     height: 100vh;
+    position: relative;
+    z-index: 2;
 }
 
 .photo-landscape img {
@@ -48,6 +53,8 @@ body {
 
 .photo-portrait {
     height: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .photo-portrait img {
@@ -91,22 +98,49 @@ button {
 @media (max-width: 600px) {
 
     body {
+        background: none;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url("images/planting-background.JPG");
+
         background-size: auto 100vh;
         background-position: center top;
+        background-repeat: no-repeat;
+
+        z-index: -1;
     }
 
     .hero {
         min-height: 100vh;
         padding: 30px 20px;
+        box-sizing: border-box;
+
+        position: relative;
+        z-index: 1;
     }
 
-    .second-photo {
-        height: 35vh;
+    .photo-landscape {
+        height: 60vh;
+        position: relative;
+        z-index: 2;
     }
 
-    .second-photo img {
+    .photo-landscape img {
         object-fit: cover;
-        object-position: center;
     }
 
+    .photo-portrait {
+        position: relative;
+        z-index: 2;
+    }
 }
