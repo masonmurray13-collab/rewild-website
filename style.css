@@ -34,16 +34,26 @@ body {
     box-sizing: border-box;
 }
 
-.second-photo {
+.photo-landscape {
     width: 100%;
     height: 100vh;
 }
 
-.second-photo img {
+.photo-landscape img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.photo-portrait {
+    height: auto;
+}
+
+.photo-portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 form {
