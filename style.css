@@ -27,8 +27,6 @@ body {
     background-attachment: fixed;
 
     min-height: 100vh;
-
-    z-index: -1;
 }
 
 .hero {
