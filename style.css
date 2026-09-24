@@ -76,3 +76,27 @@ button {
     display: block;
     margin-top: 10px;
 }
+
+
+@media (max-width: 600px) {
+
+    body {
+        background-size: auto 100vh;
+        background-position: center top;
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding: 30px 20px;
+    }
+
+    .second-photo {
+        height: 35vh;
+    }
+
+    .second-photo img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
